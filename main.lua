@@ -8,7 +8,7 @@ By @Feder_tion / @teamcreate
 
 
 local InterfaceBuild = '1VEX'
-local Release = "Build 1.55"
+local Release = "Build 1.0.0"
 local RomeFolder = "ROME"
 local ConfigurationFolder = RomeFolder.."/Configurations"
 local ConfigurationExtension = ".rfld"
