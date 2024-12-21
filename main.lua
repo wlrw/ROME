@@ -1232,9 +1232,9 @@ function ROMELibrary:CreateWindow(Settings)
 
 	LoadingFrame.Version.TextTransparency = 1
 	LoadingFrame.Title.Text = Settings.LoadingTitle or "ROME"
-	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "Interface Suite"
+	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "Interface"
 
-	if Settings.LoadingTitle ~= "ROME Interface Suite" then
+	if Settings.LoadingTitle ~= "ROME Interface" then
 		LoadingFrame.Version.Text = "ROME UI"
 	end
 
