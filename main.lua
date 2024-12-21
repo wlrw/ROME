@@ -509,7 +509,7 @@ ROME.DisplayOrder = 100
 LoadingFrame.Version.Text = Release
 
 
-local Icons = useStudio and require(script.Parent.icons) or loadstring(game:HttpGet('https://raw.githubusercontent.com/wlrw/rayfield/refs/heads/main/icons.lua'))()
+local Icons = useStudio and require(script.Parent.icons) or loadstring(game:HttpGet('https://raw.githubusercontent.com/wlrw/ROME/refs/heads/main/icons.lua'))()
 
 -- Variables
 
@@ -3479,7 +3479,7 @@ end
 
 if not useStudio then
 	local success, result = pcall(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/wlrw/rayfield/refs/heads/main/boost.lua'))()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/wlrw/ROME/refs/heads/main/boost.lua'))()
 	end)
 
 	if not success then
