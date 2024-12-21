@@ -489,7 +489,6 @@ if UserInputService.TouchEnabled then
 	useMobilePrompt = true
 end
 
-
 -- Object Variables
 
 local Main = Rayfield.Main
@@ -509,7 +508,7 @@ Rayfield.DisplayOrder = 100
 LoadingFrame.Version.Text = Release
 
 
-local Icons = useStudio and require(script.Parent.icons) or loadstring(game:HttpGet('https://raw.githubusercontent.com/SiriusSoftwareLtd/Rayfield/refs/heads/main/icons.lua'))()
+local Icons = useStudio and require(script.Parent.icons) or loadstring(game:HttpGet('https://raw.githubusercontent.com/wlrw/ROME/refs/heads/main/icons.lua'))()
 
 -- Variables
 
@@ -1215,7 +1214,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 	if not correctBuild and not Settings.DisableBuildWarnings then
 		task.delay(3, 
 			function() 
-				RayfieldLibrary:Notify({Title = 'Build Mismatch', Content = 'Rayfield may encounter issues as you are running an incompatible interface version ('.. ((Rayfield:FindFirstChild('Build') and Rayfield.Build.Value) or 'No Build') ..').\n\nThis version of Rayfield is intended for interface build '..InterfaceBuild..'.\n\nTry rejoining and then run the script twice.', Image = 4335487866, Duration = 15})		
+				RayfieldLibrary:Notify({Title = 'Build Mismatch', Content = 'ROME may encounter issues as you are running an incompatible interface version ('.. ((Rayfield:FindFirstChild('Build') and Rayfield.Build.Value) or 'No Build') ..').\n\nThis version of ROME is intended for interface build '..InterfaceBuild..'.\n\nTry rejoining and then run the script twice.', Image = 4335487866, Duration = 15})		
 			end)
 	end
 
@@ -1232,7 +1231,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 	LoadingFrame.Subtitle.TextTransparency = 1
 
 	LoadingFrame.Version.TextTransparency = 1
-	LoadingFrame.Title.Text = Settings.LoadingTitle or "Rayfield"
+	LoadingFrame.Title.Text = Settings.LoadingTitle or "ROME"
 	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "Interface Suite"
 
 	if Settings.LoadingTitle ~= "ROME Interface" then
@@ -1286,8 +1285,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 			while true do
 				task.wait(math.random(180, 600))
 				RayfieldLibrary:Notify({
-					Title = "Rayfield Interface",
-					Content = "Enjoying this UI library? Find it at sirius.menu/discord",
+					Title = "ROME :3",
+					Content = "Enjoying this script? Let me know in the server!",
 					Duration = 7,
 					Image = 4370033185,
 				})
@@ -1766,7 +1765,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 		end
 
 		-- ColorPicker
-		function Tab:CreateColorPicker(ColorPickerSettings) -- by Throit
+		function Tab:CreateColorPicker(ColorPickerSettings)
 			ColorPickerSettings.Type = "ColorPicker"
 			local ColorPicker = Elements.Template.ColorPicker:Clone()
 			local Background = ColorPicker.CPBackground
