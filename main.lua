@@ -423,7 +423,7 @@ end
 
 -- Interface Management
 
-local ROME = useStudio and script.Parent:FindFirstChild('ROME') or game:GetObjects("rbxassetid://88828114368658")[1]
+local ROME = useStudio and script.Parent:FindFirstChild('ROME') or game:GetObjects("rbxassetid://10804731440")[1]
 local buildAttempts = 0
 local correctBuild = false
 local warned
@@ -1396,7 +1396,7 @@ function ROMELibrary:CreateWindow(Settings)
 		if not Passthrough then
 			local AttemptsRemaining = math.random(2, 5)
 			ROME.Enabled = false
-			local KeyUI = useStudio and script.Parent:FindFirstChild('Key') or game:GetObjects("rbxassetid://11380036235")[1]
+			local KeyUI = useStudio and script.Parent:FindFirstChild('Key') or game:GetObjects("rbxassetid://10804731440")[1]
 
 			KeyUI.Enabled = true
 
