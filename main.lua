@@ -423,7 +423,7 @@ end
 
 -- Interface Management
 
-local ROME = useStudio and script.Parent:FindFirstChild('ROME') or game:GetObjects("rbxassetid://10804731440")[1]
+local ROME = useStudio and script.Parent:FindFirstChild('Rayfield') or game:GetObjects("rbxassetid://10804731440")[1]
 local buildAttempts = 0
 local correctBuild = false
 local warned
@@ -442,7 +442,7 @@ repeat
 		warned = true
 	end
 
-	toDestroy, ROME = ROME, useStudio and script.Parent:FindFirstChild('ROME') or game:GetObjects("rbxassetid://88828114368658")[1]
+	toDestroy, ROME = ROME, useStudio and script.Parent:FindFirstChild('Rayfield') or game:GetObjects("rbxassetid://10804731440")[1]
 	if toDestroy and not useStudio then toDestroy:Destroy() end
 
 	buildAttempts = buildAttempts + 1
